@@ -49,30 +49,12 @@ ENDIF()
 # --------------------------------------------------------------------------
 if(VTK_WRAP_PYTHON AND BUILD_SHARED_LIBS)
 
-  set(Slicer_Wrapped_LIBRARIES
-    
-    )
-
-  foreach(library ${lib_name})
-    if(TARGET ${library}PythonD)
-      list(APPEND Slicer_Wrapped_LIBRARIES ${library}PythonD)
-    endif()
-  endforeach()
-
   SlicerMacroPythonWrapModuleVTKLibrary(
     NAME ${PROJECT_NAME}
     SRCS ${MarginCalculatorCommon_SRCS}
-    WRAPPED_TARGET_LIBRARIES ${Slicer_Wrapped_LIBRARIES}
     RELATIVE_PYTHON_DIR "."
     )
 
-  # Set python module logic output
-  set_target_properties(${PROJECT_NAME}Python ${PROJECT_NAME}PythonD PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/${Slicer_QTLOADABLEMODULES_BIN_DIR}"
-    LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/${Slicer_QTLOADABLEMODULES_LIB_DIR}"
-    ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/${Slicer_QTLOADABLEMODULES_LIB_DIR}"
-    )
-
   # Export target
-  set_property(GLOBAL APPEND PROPERTY Slicer_TARGETS ${PROJECT_NAME}Python ${PROJECT_NAME}PythonD)
+  set_property(GLOBAL APPEND PROPERTY Slicer_TARGETS ${PROJECT_NAME}Python)
 endif()
