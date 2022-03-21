@@ -30,9 +30,6 @@
 #include "qSlicerMotionSimulatorModuleWidget.h"
 
 //-----------------------------------------------------------------------------
-Q_EXPORT_PLUGIN2(qSlicerMotionSimulatorModule, qSlicerMotionSimulatorModule);
-
-//-----------------------------------------------------------------------------
 /// \ingroup Slicer_QtModules_ExtensionTemplate
 class qSlicerMotionSimulatorModulePrivate
 {

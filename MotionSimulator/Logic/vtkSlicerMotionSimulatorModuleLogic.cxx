@@ -291,7 +291,7 @@ int vtkSlicerMotionSimulatorModuleLogic::RunSimulation()
   // Make sure inputs are initialized
   if (!this->GetMRMLScene() || !this->MotionSimulatorNode || !doseVolumeNode || !contourNode || !outputArrayNode)
   {
-    vtkErrorMacro("MotionSimulator: inputs and outputs are not initialized!")
+    vtkErrorMacro("MotionSimulator: inputs and outputs are not initialized!");
     return -1;
   }
 

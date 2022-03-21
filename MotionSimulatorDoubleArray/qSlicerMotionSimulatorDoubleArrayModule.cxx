@@ -31,9 +31,6 @@
 #include "qSlicerMotionSimulatorDoubleArrayModule.h"
 
 //-----------------------------------------------------------------------------
-Q_EXPORT_PLUGIN2(qSlicerMotionSimulatorDoubleArrayModule, qSlicerMotionSimulatorDoubleArrayModule);
-
-//-----------------------------------------------------------------------------
 /// \ingroup Slicer_QtModules_ExtensionTemplate
 class qSlicerMotionSimulatorDoubleArrayModulePrivate
 {

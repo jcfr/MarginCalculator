@@ -31,9 +31,6 @@
 #include "qSlicerDoseMorphologyModuleWidget.h"
 
 //-----------------------------------------------------------------------------
-Q_EXPORT_PLUGIN2(qSlicerDoseMorphologyModule, qSlicerDoseMorphologyModule);
-
-//-----------------------------------------------------------------------------
 /// \ingroup Slicer_QtModules_ExtensionTemplate
 class qSlicerDoseMorphologyModulePrivate
 {
