@@ -36,9 +36,6 @@
 #include "qSlicerDosePopulationHistogramModuleWidget.h"
 
 //-----------------------------------------------------------------------------
-Q_EXPORT_PLUGIN2(qSlicerDosePopulationHistogramModule, qSlicerDosePopulationHistogramModule);
-
-//-----------------------------------------------------------------------------
 /// \ingroup Slicer_QtModules_ExtensionTemplate
 class qSlicerDosePopulationHistogramModulePrivate
 {
