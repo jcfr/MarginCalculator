@@ -261,7 +261,7 @@ int vtkSlicerDoseMorphologyModuleLogic::MorphDose()
   // Make sure inputs are initialized
   if (!this->GetMRMLScene() || !referenceDoseVolumeNode || !inputDoseVolumeNode || !outputDoseVolumeNode)
   {
-    vtkErrorMacro("DoseMorphology: Inputs are not initialized!")
+    vtkErrorMacro("DoseMorphology: Inputs are not initialized!");
     return -1;
   }
 
@@ -459,4 +459,5 @@ int vtkSlicerDoseMorphologyModuleLogic::MorphDose()
 
   return 0;
 }
+
 
